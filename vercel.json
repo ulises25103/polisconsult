@@ -1,0 +1,12 @@
+{
+  "buildCommand": "echo 'Build completed successfully'",
+  "outputDirectory": ".",
+  "installCommand": "echo 'No build step required'",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/$1"
+    }
+  ]
+}

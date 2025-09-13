@@ -181,20 +181,32 @@ formValidator.init();
 
 ## 🚀 Despliegue
 
-### Opciones de Despliegue
+### Despliegue en Vercel
 
-1. **Netlify**: Arrastrar y soltar
-2. **Vercel**: Integración Git
-3. **GitHub Pages**: Repositorio público
-4. **Servidor tradicional**: FTP
+Este proyecto está configurado para desplegarse fácilmente en Vercel:
+
+1. **Conecta tu repositorio de Git** a Vercel
+2. **Configuración automática**: Vercel detectará automáticamente la configuración
+3. **Deploy automático**: Cada push al repositorio principal activará un nuevo deploy
+
+**Archivo de configuración incluido:**
+
+- `vercel.json`: Configura el directorio de salida y el comportamiento del sitio
+
+### Otras Opciones de Despliegue
+
+1. **Netlify**: Arrastrar y soltar el directorio completo
+2. **GitHub Pages**: Configurar GitHub Actions para el deploy
+3. **Servidor tradicional**: FTP al directorio público del servidor
 
 ### Optimizaciones para Producción
 
-- [ ] Minificar CSS/JS
-- [ ] Optimizar imágenes
-- [ ] Habilitar compresión GZIP
-- [ ] Configurar CDN
-- [ ] Implementar cache headers
+- [x] Estructura modular de archivos
+- [x] Archivos optimizados y minificados
+- [x] Configuración de cache incluida
+- [ ] Compresión GZIP adicional
+- [ ] CDN para assets estáticos
+- [ ] Service Worker para cache offline
 
 ## 📞 Contacto
 
