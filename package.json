@@ -1,0 +1,37 @@
+{
+  "name": "polisconsult-website",
+  "version": "1.0.0",
+  "description": "Sitio web profesional de consultoría política para PolisConsult",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node server.js",
+    "serve": "serve .",
+    "build": "echo 'Build process would go here'",
+    "lint": "echo 'Linting would go here'",
+    "test": "echo 'Tests would go here'"
+  },
+  "keywords": [
+    "consultoría",
+    "política",
+    "campañas",
+    "intendencias",
+    "marketing",
+    "político"
+  ],
+  "author": "PolisConsult",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "optionalDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ]
+}

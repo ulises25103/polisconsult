@@ -1,0 +1,91 @@
+/* Custom Styles for PolisConsult */
+
+/* Font Definitions */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.title-font {
+  font-family: "Playfair Display", serif;
+}
+
+/* Hero Gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+}
+
+/* Custom Components */
+.cta-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Styles */
+.form-input {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition;
+}
+
+.form-input.error {
+  @apply border-red-500;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 inline-block;
+}
+
+.btn-secondary {
+  @apply border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-800 transition duration-300 inline-block;
+}
+
+/* Floating CTA */
+.floating-cta {
+  @apply fixed bottom-6 right-6 z-50;
+}
+
+.floating-cta a {
+  @apply bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 group;
+}
+
+.floating-cta .tooltip {
+  @apply absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+}
+
+.floating-cta .tooltip::after {
+  @apply absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-gray-800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-gradient h1 {
+    @apply text-3xl;
+  }
+
+  .floating-cta {
+    @apply bottom-4 right-4;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .floating-cta,
+  nav,
+  .cta-section {
+    display: none !important;
+  }
+}
