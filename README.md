@@ -189,9 +189,11 @@ Este proyecto está configurado para desplegarse fácilmente en Vercel:
 2. **Configuración automática**: Vercel detectará automáticamente la configuración
 3. **Deploy automático**: Cada push al repositorio principal activará un nuevo deploy
 
-**Archivo de configuración incluido:**
+**Archivos de configuración incluidos:**
 
-- `vercel.json`: Configura el directorio de salida y el comportamiento del sitio
+- `vercel.json`: Configura el directorio `public/` como directorio de salida
+- `public/_redirects`: Maneja las redirecciones de rutas
+- `public/.nojekyll`: Evita procesamiento de Jekyll
 
 ### Otras Opciones de Despliegue
 

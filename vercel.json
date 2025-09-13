@@ -1,6 +1,6 @@
 {
   "buildCommand": "echo 'Build completed successfully'",
-  "outputDirectory": ".",
+  "outputDirectory": "public",
   "installCommand": "echo 'No build step required'",
   "framework": null,
   "rewrites": [

@@ -65,16 +65,17 @@ El proyecto incluye `vercel.json` que configura:
 
 ```
 polisconsult-website/
-├── index.html              # 🏠 Página principal
-├── pages/
-│   ├── acerca-de.html      # 👥 Página "Acerca de nosotros"
-│   └── servicios.html      # 💼 Página de servicios detallados
-├── assets/
-│   ├── css/styles.css      # 🎨 Estilos personalizados
-│   ├── js/
-│   │   ├── main.js         # 🚀 Punto de entrada JavaScript
-│   │   └── modules/        # 📦 Módulos JavaScript
-│   └── images/             # 🖼️ Imágenes del sitio
+├── public/
+│   ├── index.html              # 🏠 Página principal
+│   ├── pages/
+│   │   ├── acerca-de.html      # 👥 Página "Acerca de nosotros"
+│   │   └── servicios.html      # 💼 Página de servicios detallados
+│   ├── assets/
+│   │   ├── css/styles.css      # 🎨 Estilos personalizados
+│   │   ├── js/
+│   │   │   ├── main.js         # 🚀 Punto de entrada JavaScript
+│   │   │   └── modules/        # 📦 Módulos JavaScript
+│   │   └── images/             # 🖼️ Imágenes del sitio
 ├── vercel.json             # ⚙️ Configuración de Vercel
 ├── server.js               # 🖥️ Servidor de desarrollo
 ├── package.json            # 📋 Configuración del proyecto

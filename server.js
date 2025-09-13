@@ -37,8 +37,8 @@ const server = http.createServer((req, res) => {
     pathname = "/index.html";
   }
 
-  // Build the file path
-  const filePath = path.join(__dirname, pathname);
+  // Build the file path (serve from public directory)
+  const filePath = path.join(__dirname, "public", pathname);
 
   // Check if file exists
   fs.access(filePath, fs.constants.F_OK, (err) => {
