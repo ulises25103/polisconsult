@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conoce a PolisConsult: Nuestra historia, misión, visión y el equipo detrás de la consultoría política especializada en campañas municipales."
+    />
+    <meta
+      name="keywords"
+      content="acerca de nosotros, historia PolisConsult, consultoría política, equipo, misión visión"
+    />
+    <meta name="author" content="PolisConsult" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://polisconsult.com/pages/acerca-de.html"
+    />
+    <meta
+      property="og:title"
+      content="Acerca de Nosotros | PolisConsult - Consultoría Política"
+    />
+    <meta
+      property="og:description"
+      content="Conoce a PolisConsult: Nuestra historia, misión, visión y el equipo detrás de la consultoría política especializada en campañas municipales."
+    />
+    <meta property="og:image" content="https://polisconsult.com/og-image.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"
+    ></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/images/favicon.ico"
+    />
+
+    <title>Acerca de Nosotros | PolisConsult - Consultoría Política</title>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <i data-feather="globe" class="text-blue-600 mr-2"></i>
+            <a
+              href="../../index.html"
+              class="title-font text-xl font-bold text-blue-800 hover:text-blue-600 transition"
+              >PolisConsult</a
+            >
+          </div>
+          <div class="hidden md:flex space-x-8 nav-menu">
+            <a
+              href="../../index.html#inicio"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Inicio</a
+            >
+            <a
+              href="#historia"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Historia</a
+            >
+            <a
+              href="#valores"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Valores</a
+            >
+            <a
+              href="#equipo"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Equipo</a
+            >
+            <a
+              href="../../pages/servicios.html"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Servicios</a
+            >
+            <a
+              href="../../index.html#contacto"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Contacto</a
+            >
+          </div>
+          <button class="md:hidden focus:outline-none nav-toggle">
+            <i data-feather="menu" class="text-gray-600"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 md:py-32">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1
+            class="title-font text-4xl md:text-5xl font-bold mb-6"
+            data-aos="fade-up"
+          >
+            Acerca de PolisConsult
+          </h1>
+          <p
+            class="text-xl mb-8 text-blue-100"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Más de 15 años de experiencia en consultoría política especializada
+            en campañas municipales y estrategias para intendencias.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historia Section -->
+    <section id="historia" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16" data-aos="fade-up">
+            <h2
+              class="title-font text-3xl md:text-4xl font-bold text-blue-800 mb-4"
+            >
+              Nuestra Historia
+            </h2>
+            <p class="text-gray-600">
+              El camino que nos ha llevado a ser líderes en consultoría política
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                Orígenes y Fundación
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Fundada en 2008, PolisConsult nació de la visión de un grupo de
+                profesionales con amplia experiencia en el sector político.
+                Observamos una necesidad creciente de asesoramiento
+                especializado para campañas municipales y decidimos crear una
+                consultoría dedicada exclusivamente a este ámbito.
+              </p>
+              <p class="text-gray-600">
+                Desde nuestros inicios, hemos acompañado a más de 200 candidatos
+                a intendencias en diferentes provincias argentinas,
+                convirtiéndonos en referentes del sector por nuestra metodología
+                innovadora y resultados comprobables.
+              </p>
+            </div>
+            <div data-aos="fade-left">
+              <img
+                src="http://static.photos/office/640x360/2"
+                alt="Oficina PolisConsult"
+                class="rounded-lg shadow-xl"
+              />
+            </div>
+          </div>
+
+          <div class="mt-16" data-aos="fade-up">
+            <div class="bg-blue-50 p-8 rounded-xl">
+              <h3 class="text-2xl font-bold text-blue-800 mb-4 text-center">
+                Nuestros Números
+              </h3>
+              <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div>
+                  <div class="text-3xl font-bold text-blue-600 mb-2">200+</div>
+                  <div class="text-gray-600">Campañas Exitosas</div>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold text-blue-600 mb-2">15+</div>
+                  <div class="text-gray-600">Años de Experiencia</div>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold text-blue-600 mb-2">95%</div>
+                  <div class="text-gray-600">Tasa de Éxito</div>
+                </div>
+                <div>
+                  <div class="text-3xl font-bold text-blue-600 mb-2">8</div>
+                  <div class="text-gray-600">Provincias Cubiertas</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misión, Visión, Valores -->
+    <section id="valores" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2
+            class="title-font text-3xl md:text-4xl font-bold text-blue-800 mb-4"
+          >
+            Misión, Visión y Valores
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Los principios que guían nuestro trabajo diario
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-xl shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i data-feather="target" class="text-blue-600 w-8 h-8"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-4 text-center">Misión</h3>
+            <p class="text-gray-600 text-center">
+              Ser el socio estratégico indispensable para candidatos a
+              intendencias, proporcionando consultoría política especializada
+              que transforme ideas en victorias electorales sostenibles.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i data-feather="eye" class="text-blue-600 w-8 h-8"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-4 text-center">Visión</h3>
+            <p class="text-gray-600 text-center">
+              Convertirnos en la consultoría política de referencia en América
+              Latina, reconocida por nuestra innovación, ética profesional y
+              capacidad para generar cambios positivos en las comunidades
+              locales.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i data-feather="heart" class="text-blue-600 w-8 h-8"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-4 text-center">Valores</h3>
+            <ul class="text-gray-600 space-y-2">
+              <li>• <strong>Excelencia:</strong> Compromiso con la calidad</li>
+              <li>• <strong>Ética:</strong> Transparencia y honestidad</li>
+              <li>• <strong>Innovación:</strong> Soluciones creativas</li>
+              <li>• <strong>Compromiso:</strong> Dedicación total</li>
+              <li>• <strong>Confidencialidad:</strong> Discreción absoluta</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo Section -->
+    <section id="equipo" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2
+            class="title-font text-3xl md:text-4xl font-bold text-blue-800 mb-4"
+          >
+            Nuestro Equipo
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Expertos con trayectoria comprobada en el ámbito político
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Director 1 -->
+          <div
+            class="bg-gray-50 p-8 rounded-xl shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-full h-64 bg-gray-200 rounded-lg mb-6 overflow-hidden"
+            >
+              <img
+                src="http://static.photos/people/640x360/1"
+                alt="Director Ejecutivo"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="font-bold text-xl mb-1">Dr. Carlos Mendoza</h3>
+            <p class="text-blue-600 mb-4">Director Ejecutivo</p>
+            <p class="text-gray-600 mb-4">
+              Doctor en Ciencia Política con más de 20 años de experiencia en
+              campañas electorales. Ha asesorado a 15 intendentes exitosos y es
+              autor de 3 libros sobre estrategia política municipal.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-blue-600 hover:text-blue-800"
+                ><i data-feather="linkedin"></i
+              ></a>
+              <a href="#" class="text-blue-600 hover:text-blue-800"
+                ><i data-feather="twitter"></i
+              ></a>
+              <a href="#" class="text-blue-600 hover:text-blue-800"
+                ><i data-feather="mail"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Director 2 -->
+          <div
+            class="bg-gray-50 p-8 rounded-xl shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-full h-64 bg-gray-200 rounded-lg mb-6 overflow-hidden"
+            >
+              <img
+                src="http://static.photos/people/640x360/2"
+                alt="Directora de Estrategia"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="font-bold text-xl mb-1">Lic. Ana García</h3>
+            <p class="text-blue-600 mb-4">Directora de Estrategia</p>
+            <p class="text-gray-600 mb-4">
+              Especialista en comunicación política digital. Ha desarrollado
+              estrategias que han generado más de 2 millones de interacciones en
+              redes sociales para campañas municipales.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-blue-600 hover:text-blue-800"
+                ><i data-feather="linkedin"></i
+              ></a>
+              <a href="#" class="text-blue-600 hover:text-blue-800"
+                ><i data-feather="twitter"></i
+              ></a>
+              <a href="#" class="text-blue-600 hover:text-blue-800"
+                ><i data-feather="mail"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Director 3 -->
+          <div
+            class="bg-gray-50 p-8 rounded-xl shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-full h-64 bg-gray-200 rounded-lg mb-6 overflow-hidden"
+            >
+              <img
+                src="http://static.photos/people/640x360/3"
+                alt="Director de Investigación"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="font-bold text-xl mb-1">Mg. Roberto Silva</h3>
+            <p class="text-blue-600 mb-4">Director de Investigación</p>
+            <p class="text-gray-600 mb-4">
+              Experto en análisis de datos electorales y estudios demográficos.
+              Ha realizado más de 500 encuestas políticas y análisis
+              territoriales para campañas exitosas.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-blue-600 hover:text-blue-800"
+                ><i data-feather="linkedin"></i
+              ></a>
+              <a href="#" class="text-blue-600 hover:text-blue-800"
+                ><i data-feather="twitter"></i
+              ></a>
+              <a href="#" class="text-blue-600 hover:text-blue-800"
+                ><i data-feather="mail"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12" data-aos="fade-up">
+          <a
+            href="../../index.html#contacto"
+            class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
+          >
+            <i data-feather="users" class="inline mr-2"></i>
+            Únete a Nuestro Equipo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <i data-feather="globe" class="text-white mr-2"></i>
+              <span class="title-font text-xl font-bold">PolisConsult</span>
+            </div>
+            <p class="text-blue-200">
+              Consultoría política especializada en campañas municipales y
+              estrategias para intendencias.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Enlaces</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="../../index.html"
+                  class="text-blue-200 hover:text-white transition"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#historia"
+                  class="text-blue-200 hover:text-white transition"
+                  >Historia</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#equipo"
+                  class="text-blue-200 hover:text-white transition"
+                  >Equipo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../pages/servicios.html"
+                  class="text-blue-200 hover:text-white transition"
+                  >Servicios</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Contacto</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i data-feather="mail" class="mr-2 w-4"></i>
+                <span class="text-blue-200">info@polisconsult.com</span>
+              </li>
+              <li class="flex items-center">
+                <i data-feather="phone" class="mr-2 w-4"></i>
+                <span class="text-blue-200">+54 11 1234-5678</span>
+              </li>
+              <li class="flex items-center">
+                <i data-feather="map-pin" class="mr-2 w-4"></i>
+                <span class="text-blue-200">Buenos Aires, Argentina</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Síganos</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition"
+                ><i data-feather="facebook" class="w-5"></i
+              ></a>
+              <a
+                href="#"
+                class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition"
+                ><i data-feather="twitter" class="w-5"></i
+              ></a>
+              <a
+                href="#"
+                class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition"
+                ><i data-feather="linkedin" class="w-5"></i
+              ></a>
+              <a
+                href="#"
+                class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition"
+                ><i data-feather="instagram" class="w-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-blue-800 mt-12 pt-8 text-center text-blue-300"
+        >
+          <p>© 2024 PolisConsult. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript Module -->
+    <script type="module" src="../../assets/js/main.js"></script>
+  </body>
+</html>

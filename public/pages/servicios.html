@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Servicios especializados de PolisConsult: Análisis político, estrategia de campaña, comunicación digital y consultoría integral para campañas municipales."
+    />
+    <meta
+      name="keywords"
+      content="servicios consultoría política, análisis político, estrategia campaña, comunicación digital, asesoramiento intendencias"
+    />
+    <meta name="author" content="PolisConsult" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://polisconsult.com/pages/servicios.html"
+    />
+    <meta
+      property="og:title"
+      content="Nuestros Servicios | PolisConsult - Consultoría Política"
+    />
+    <meta
+      property="og:description"
+      content="Servicios especializados de PolisConsult: Análisis político, estrategia de campaña, comunicación digital y consultoría integral para campañas municipales."
+    />
+    <meta property="og:image" content="https://polisconsult.com/og-image.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"
+    ></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/images/favicon.ico"
+    />
+
+    <title>Nuestros Servicios | PolisConsult - Consultoría Política</title>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <i data-feather="globe" class="text-blue-600 mr-2"></i>
+            <a
+              href="../../index.html"
+              class="title-font text-xl font-bold text-blue-800 hover:text-blue-600 transition"
+              >PolisConsult</a
+            >
+          </div>
+          <div class="hidden md:flex space-x-8 nav-menu">
+            <a
+              href="../../index.html#inicio"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Inicio</a
+            >
+            <a
+              href="#analisis"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Análisis</a
+            >
+            <a
+              href="#estrategia"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Estrategia</a
+            >
+            <a
+              href="#comunicacion"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Comunicación</a
+            >
+            <a
+              href="../../pages/acerca-de.html"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Nosotros</a
+            >
+            <a
+              href="../../index.html#contacto"
+              class="text-gray-600 hover:text-blue-600 transition"
+              >Contacto</a
+            >
+          </div>
+          <button class="md:hidden focus:outline-none nav-toggle">
+            <i data-feather="menu" class="text-gray-600"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 md:py-32">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1
+            class="title-font text-4xl md:text-5xl font-bold mb-6"
+            data-aos="fade-up"
+          >
+            Nuestros Servicios
+          </h1>
+          <p
+            class="text-xl mb-8 text-blue-100"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Soluciones integrales y personalizadas para cada etapa de tu campaña
+            municipal. Desde el análisis estratégico hasta la victoria
+            electoral.
+          </p>
+          <a
+            href="../index.html#contacto"
+            class="bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <i data-feather="phone" class="inline mr-2"></i>
+            Solicitar Consultoría
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Análisis Político -->
+    <section id="analisis" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i data-feather="bar-chart-2" class="text-blue-600 w-8 h-8"></i>
+            </div>
+            <h2
+              class="title-font text-3xl md:text-4xl font-bold text-blue-800 mb-6"
+            >
+              Análisis Político
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Nuestro servicio de análisis político proporciona una comprensión
+              profunda del escenario electoral local, identificando
+              oportunidades y riesgos para tu campaña.
+            </p>
+
+            <h3 class="font-bold text-lg mb-4">¿Qué incluye?</h3>
+            <ul class="space-y-3 text-gray-600 mb-6">
+              <li class="flex items-start">
+                <i
+                  data-feather="check"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Estudios demográficos:</strong> Análisis detallado de
+                  la composición poblacional por edad, género, nivel
+                  socioeconómico y preferencias políticas.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="check"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Análisis de competencia:</strong> Evaluación
+                  exhaustiva de candidatos rivales, fortalezas, debilidades y
+                  estrategias previstas.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="check"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Mapeo territorial:</strong> Segmentación del
+                  municipio por zonas con diferentes características
+                  sociopolíticas.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="check"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Encuestas cuantitativas:</strong> Estudios de opinión
+                  pública con muestras representativas y análisis
+                  estadístico.</span
+                >
+              </li>
+            </ul>
+
+            <div class="bg-blue-50 p-6 rounded-lg">
+              <h4 class="font-bold text-blue-800 mb-2">Resultado esperado</h4>
+              <p class="text-gray-600">
+                Un diagnóstico completo que te permita tomar decisiones
+                estratégicas informadas y maximizar tus posibilidades de éxito.
+              </p>
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <img
+              src="http://static.photos/office/640x360/1"
+              alt="Análisis político"
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estrategia de Campaña -->
+    <section id="estrategia" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <img
+              src="http://static.photos/meeting/640x360/1"
+              alt="Estrategia de campaña"
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+          <div data-aos="fade-left">
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i data-feather="users" class="text-blue-600 w-8 h-8"></i>
+            </div>
+            <h2
+              class="title-font text-3xl md:text-4xl font-bold text-blue-800 mb-6"
+            >
+              Estrategia de Campaña
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Diseñamos planes de campaña integrales que combinan estrategia
+              política, comunicación efectiva y ejecución impecable para lograr
+              la victoria electoral.
+            </p>
+
+            <h3 class="font-bold text-lg mb-4">Componentes estratégicos</h3>
+            <ul class="space-y-3 text-gray-600 mb-6">
+              <li class="flex items-start">
+                <i
+                  data-feather="target"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Posicionamiento del candidato:</strong> Definición
+                  clara de tu propuesta de valor y diferenciación de la
+                  competencia.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="message-square"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Desarrollo de mensajes clave:</strong> Creación de
+                  narrativas poderosas que conecten con el electorado
+                  local.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="calendar"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Planificación temporal:</strong> Cronograma detallado
+                  de actividades desde el lanzamiento hasta el día de la
+                  elección.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="trending-up"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Métricas de seguimiento:</strong> KPIs específicos
+                  para medir el progreso y ajustar la estrategia en tiempo
+                  real.</span
+                >
+              </li>
+            </ul>
+
+            <div class="bg-green-50 p-6 rounded-lg">
+              <h4 class="font-bold text-green-800 mb-2">Metodología probada</h4>
+              <p class="text-gray-600">
+                Aplicamos un enfoque sistemático que ha resultado en el 95% de
+                nuestras campañas estratégicas exitosas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comunicación Digital -->
+    <section id="comunicacion" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <div
+              class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6"
+            >
+              <i data-feather="monitor" class="text-blue-600 w-8 h-8"></i>
+            </div>
+            <h2
+              class="title-font text-3xl md:text-4xl font-bold text-blue-800 mb-6"
+            >
+              Comunicación Digital
+            </h2>
+            <p class="text-gray-600 mb-6">
+              En la era digital, la comunicación online es fundamental para
+              conectar con el electorado joven y moderno. Gestionamos tu
+              presencia digital de manera estratégica y efectiva.
+            </p>
+
+            <h3 class="font-bold text-lg mb-4">Servicios digitales</h3>
+            <ul class="space-y-3 text-gray-600 mb-6">
+              <li class="flex items-start">
+                <i
+                  data-feather="smartphone"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Gestión de redes sociales:</strong> Estrategia
+                  completa para Facebook, Twitter, Instagram y LinkedIn con
+                  contenido personalizado.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="megaphone"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Publicidad digital:</strong> Campañas pagas
+                  segmentadas por ubicación, intereses y comportamiento
+                  electoral.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="image"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Creación de contenido:</strong> Diseño gráfico,
+                  videos políticos, infografías y materiales visuales
+                  impactantes.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  data-feather="trending-up"
+                  class="text-green-500 mr-3 mt-1 flex-shrink-0"
+                ></i>
+                <span
+                  ><strong>Monitoreo y análisis:</strong> Seguimiento de
+                  engagement, reach y conversión de todas las acciones
+                  digitales.</span
+                >
+              </li>
+            </ul>
+
+            <div class="bg-purple-50 p-6 rounded-lg">
+              <h4 class="font-bold text-purple-800 mb-2">
+                Resultados digitales
+              </h4>
+              <p class="text-gray-600">
+                Nuestras campañas digitales han generado más de 10 millones de
+                interacciones y alcanzado a más del 70% del electorado objetivo.
+              </p>
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <img
+              src="http://static.photos/technology/640x360/1"
+              alt="Comunicación digital"
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso de Trabajo -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2
+            class="title-font text-3xl md:text-4xl font-bold text-blue-800 mb-4"
+          >
+            Nuestro Proceso de Trabajo
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Una metodología probada que garantiza resultados excepcionales
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold"
+            >
+              1
+            </div>
+            <h3 class="font-bold text-lg mb-3">Diagnóstico</h3>
+            <p class="text-gray-600">
+              Análisis completo del escenario político, competencia y
+              oportunidades.
+            </p>
+          </div>
+
+          <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold"
+            >
+              2
+            </div>
+            <h3 class="font-bold text-lg mb-3">Estrategia</h3>
+            <p class="text-gray-600">
+              Desarrollo del plan de campaña personalizado y mensajes clave.
+            </p>
+          </div>
+
+          <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold"
+            >
+              3
+            </div>
+            <h3 class="font-bold text-lg mb-3">Ejecución</h3>
+            <p class="text-gray-600">
+              Implementación coordinada de todas las acciones planificadas.
+            </p>
+          </div>
+
+          <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold"
+            >
+              4
+            </div>
+            <h3 class="font-bold text-lg mb-3">Victoria</h3>
+            <p class="text-gray-600">
+              Seguimiento constante y ajustes para asegurar el triunfo
+              electoral.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section
+      class="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <h2
+          class="title-font text-3xl md:text-4xl font-bold mb-4"
+          data-aos="fade-up"
+        >
+          ¿Listo para comenzar?
+        </h2>
+        <p
+          class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Nuestros servicios están diseñados para maximizar tus posibilidades de
+          éxito. Contactanos hoy y comienza a construir tu victoria electoral.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <a
+            href="../../index.html#contacto"
+            class="bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300"
+          >
+            <i data-feather="phone" class="inline mr-2"></i>
+            Solicitar Presupuesto
+          </a>
+          <a
+            href="tel:+541112345678"
+            class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-800 transition duration-300"
+          >
+            <i data-feather="message-circle" class="inline mr-2"></i>
+            Llamar Ahora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <i data-feather="globe" class="text-white mr-2"></i>
+              <span class="title-font text-xl font-bold">PolisConsult</span>
+            </div>
+            <p class="text-blue-200">
+              Consultoría política especializada en campañas municipales y
+              estrategias para intendencias.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Servicios</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#analisis"
+                  class="text-blue-200 hover:text-white transition"
+                  >Análisis Político</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#estrategia"
+                  class="text-blue-200 hover:text-white transition"
+                  >Estrategia de Campaña</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#comunicacion"
+                  class="text-blue-200 hover:text-white transition"
+                  >Comunicación Digital</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../pages/acerca-de.html"
+                  class="text-blue-200 hover:text-white transition"
+                  >Acerca de Nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Contacto</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i data-feather="mail" class="mr-2 w-4"></i>
+                <span class="text-blue-200">info@polisconsult.com</span>
+              </li>
+              <li class="flex items-center">
+                <i data-feather="phone" class="mr-2 w-4"></i>
+                <span class="text-blue-200">+54 11 1234-5678</span>
+              </li>
+              <li class="flex items-center">
+                <i data-feather="map-pin" class="mr-2 w-4"></i>
+                <span class="text-blue-200">Buenos Aires, Argentina</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-4">Síganos</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition"
+                ><i data-feather="facebook" class="w-5"></i
+              ></a>
+              <a
+                href="#"
+                class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition"
+                ><i data-feather="twitter" class="w-5"></i
+              ></a>
+              <a
+                href="#"
+                class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition"
+                ><i data-feather="linkedin" class="w-5"></i
+              ></a>
+              <a
+                href="#"
+                class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition"
+                ><i data-feather="instagram" class="w-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-blue-800 mt-12 pt-8 text-center text-blue-300"
+        >
+          <p>© 2024 PolisConsult. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript Module -->
+    <script type="module" src="../../assets/js/main.js"></script>
+  </body>
+</html>
