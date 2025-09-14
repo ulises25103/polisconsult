@@ -1,9 +1,15 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
   "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "public" }
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/public/$1" }
-  ]
+    { "src": "^/$", "dest": "/index.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ],
+  "buildCommand": "node -e \"const fs=require('fs');fs.mkdirSync('public/assets/js',{recursive:true});fs.writeFileSync('public/assets/js/config.js','export const EMAILJS_CONFIG={SERVICE_ID:\\\"'+process.env.SERVICE_ID+'\\\",TEMPLATE_ID:\\\"'+process.env.TEMPLATE_ID+'\\\",PUBLIC_KEY:\\\"'+process.env.PUBLIC_KEY+'\\\"};export const SITE_CONFIG={DEBUG:'+(process.env.SITE_DEBUG==='true')+'};\");\""
 }
