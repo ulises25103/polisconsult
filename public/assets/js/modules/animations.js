@@ -17,12 +17,34 @@ export class AnimationsManager {
    * Initialize AOS library
    */
   init() {
-    if (typeof AOS !== "undefined") {
-      AOS.init(this.aosConfig);
-      console.log("Animations initialized successfully");
-    } else {
-      console.warn("AOS library not loaded");
-    }
+    this.waitForAOS()
+      .then(() => {
+        AOS.init(this.aosConfig);
+        console.log("Animations initialized successfully");
+      })
+      .catch(() => {
+        console.warn("AOS library not loaded");
+      });
+  }
+
+  /**
+   * Wait until AOS global is available (max ~5s)
+   */
+  waitForAOS() {
+    return new Promise((resolve, reject) => {
+      let attempts = 0;
+      const max = 50; // 50 * 100ms = 5s
+      const tick = () => {
+        if (typeof AOS !== "undefined") {
+          resolve();
+        } else if (attempts++ >= max) {
+          reject();
+        } else {
+          setTimeout(tick, 100);
+        }
+      };
+      tick();
+    });
   }
 
   /**
