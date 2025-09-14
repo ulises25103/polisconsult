@@ -6,7 +6,7 @@
 import { AnimationsManager } from "./modules/animations.js";
 import { IconsManager } from "./modules/icons.js";
 import { FormValidator } from "./modules/form-validation.js";
-import { muteConsoleLogsInProd } from "./modules/env.js";
+import { muteConsoleLogsInProd, isDebug } from "./modules/env.js";
 
 // Initialize global managers
 window.animationsManager = new AnimationsManager();
@@ -17,7 +17,7 @@ window.formValidator = new FormValidator();
 document.addEventListener("DOMContentLoaded", function () {
   // Silenciar logs en producción
   muteConsoleLogsInProd();
-  console.log("PolisConsult website initializing...");
+  if (isDebug()) console.log("PolisConsult website initializing...");
 
   // Initialize animations
   window.animationsManager.init();
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize smooth scrolling
   initSmoothScrolling();
 
-  console.log("PolisConsult website ready!");
+  if (isDebug()) console.log("PolisConsult website ready!");
 });
 
 /**

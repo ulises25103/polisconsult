@@ -3,6 +3,8 @@
  * Handles AOS (Animate On Scroll) initialization and custom animations
  */
 
+import { isDebug } from "./env.js";
+
 export class AnimationsManager {
   constructor() {
     this.aosConfig = {
@@ -20,10 +22,10 @@ export class AnimationsManager {
     this.waitForAOS()
       .then(() => {
         AOS.init(this.aosConfig);
-        console.log("Animations initialized successfully");
+        if (isDebug()) console.log("Animations initialized successfully");
       })
       .catch(() => {
-        console.warn("AOS library not loaded");
+        if (isDebug()) console.warn("AOS library not loaded");
       });
   }
 
