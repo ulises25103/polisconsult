@@ -1,10 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "public/**", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/", "dest": "/public/index.html" },
-    { "src": "/(.*)", "dest": "/public/$1" }
+  "framework": null,
+  "buildCommand": "sh -c \"mkdir -p .vercel/output/static && if [ -d public ]; then cp -R public/* .vercel/output/static; else cp -R ./* .vercel/output/static; fi\"",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
   ]
 }
