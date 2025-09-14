@@ -1,12 +1,7 @@
 {
-  "buildCommand": "echo 'Build completed successfully'",
-  "outputDirectory": "public",
-  "installCommand": "echo 'No build step required'",
   "framework": null,
+  "buildCommand": "mkdir -p .vercel/output/static && cp -r public/* .vercel/output/static",
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
-    }
+    { "source": "/(.*)", "destination": "/$1" }
   ]
 }

@@ -9,7 +9,7 @@ const path = require("path");
 const url = require("url");
 
 const PORT = process.env.PORT || 3000;
-const HOST = "localhost";
+const HOST = "0.0.0.0";
 
 // MIME types for different file extensions
 const mimeTypes = {
@@ -70,6 +70,4 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, HOST, () => {
   console.log(`🚀 Server running at http://${HOST}:${PORT}`);
   console.log(`📁 Serving files from: ${__dirname}`);
-  console.log(`🔄 Open your browser and navigate to http://${HOST}:${PORT}`);
-  console.log(`❌ Press Ctrl+C to stop the server`);
 });
