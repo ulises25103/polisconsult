@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server.js",
     "serve": "serve .",
-    "build": "echo 'Build process would go here'",
+    "build": "node scripts/generate-config.js",
     "lint": "echo 'Linting would go here'",
     "test": "echo 'Tests would go here'"
   },
