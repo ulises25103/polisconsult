@@ -96,6 +96,33 @@ npm run lint
 - Mensajes de error descriptivos
 - Indicador de carga
 - Mensajes de éxito/error
+- **Envío de emails reales** vía EmailJS
+
+#### 📧 Configuración de EmailJS
+
+Para que los formularios envíen emails reales:
+
+1. **Crear cuenta gratuita**: [EmailJS.com](https://www.emailjs.com/)
+2. **Configurar servicio**: Gmail, Outlook, o cualquier proveedor
+3. **Crear template**: Usa las variables disponibles
+4. **Actualizar configuración** en `assets/js/modules/form-validation.js`
+
+**Variables del template**:
+
+- `{{from_name}}` - Nombre del remitente
+- `{{from_email}}` - Email del remitente
+- `{{telefono}}` - Teléfono
+- `{{cargo}}` - Cargo/organización
+- `{{message}}` - Mensaje del formulario
+
+**Destino**: `info@polisconsult.com`
+
+#### 🔐 **Seguridad de las Claves**
+
+- ✅ **Claves públicas de EmailJS**: Diseñadas para ser públicas
+- ✅ **Archivo config.js**: Excluido del control de versiones
+- ❌ **Nunca subir claves reales** a repositorios públicos
+- ⚠️ **Riesgo**: Consumo de cuota mensual si se abusa
 
 ### Navegación
 

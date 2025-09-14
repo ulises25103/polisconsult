@@ -131,14 +131,42 @@ assets/images/
 └── favicon.ico
 ```
 
-### 3. Personalizar Contenido
+### 3. Configurar EmailJS (Obligatorio para formularios)
+
+```javascript
+// ⚠️  NO modifiques form-validation.js
+// Crea el archivo: public/assets/js/config.js (NO subir a Git)
+
+export const EMAILJS_CONFIG = {
+  SERVICE_ID: "tu_service_id_real_aqui", // ← De EmailJS Dashboard
+  TEMPLATE_ID: "tu_template_id_real_aqui", // ← De EmailJS Dashboard
+  PUBLIC_KEY: "tu_public_key_real_aqui", // ← De EmailJS Dashboard
+};
+```
+
+**Configuración paso a paso**:
+
+1. Regístrate gratis en [EmailJS.com](https://www.emailjs.com/)
+2. Crea un servicio de email (Gmail/Outlook/Yahoo)
+3. Crea un template de email con las variables disponibles
+4. **Crea `public/assets/js/config.js`** con tus claves reales
+5. **Verifica que esté en .gitignore** (ya está protegido)
+
+#### 🔐 **Seguridad Crítica**
+
+- ✅ **Claves públicas**: EmailJS está diseñado para usar claves públicas
+- ❌ **Nunca commits claves reales** a repositorios públicos
+- ✅ **Archivo config.js excluido** del control de versiones
+- ⚠️ **Riesgos si se exponen**: Consumo de cuota mensual, posible bloqueo
+
+### 4. Personalizar Contenido
 
 - **Información de contacto** en todas las páginas
 - **Datos del equipo** en `pages/acerca-de.html`
 - **Casos de éxito** y testimonios reales
 - **Información específica** de tu municipio/provincia
 
-### 4. Configurar Dominio
+### 5. Configurar Dominio
 
 - En Vercel Dashboard: Settings → Domains
 - Agrega tu dominio personalizado

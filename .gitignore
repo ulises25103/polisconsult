@@ -15,6 +15,18 @@ build/
 .env.test.local
 .env.production.local
 
+# API Keys and sensitive configuration
+**/config.js
+**/config.local.js
+**/secrets.js
+**/*config*.js
+**/emailjs-config.js
+
+# EmailJS and API configurations
+public/assets/js/config.js
+config.js
+*.config.js
+
 # IDE files
 .vscode/
 .idea/
