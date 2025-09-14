@@ -1,6 +1,6 @@
 {
   "framework": null,
-  "buildCommand": "mkdir -p .vercel/output/static && cp -r public/* .vercel/output/static",
+  "buildCommand": "sh -c \"mkdir -p .vercel/output/static && if [ -d public ]; then cp -R public/* .vercel/output/static; else cp -R ./* .vercel/output/static; fi\"",
   "rewrites": [
     { "source": "/(.*)", "destination": "/$1" }
   ]
