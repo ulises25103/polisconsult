@@ -8,6 +8,7 @@
       "config": { "distDir": "public" }
     }
   ],
+  "buildCommand": "node -e \"const fs=require('fs'),path=require('path');const dir='public/assets/js';fs.mkdirSync(dir,{recursive:true});const cfg=\`export const EMAILJS_CONFIG = {\\n  SERVICE_ID: '${process.env.SERVICE_ID||''}',\\n  TEMPLATE_ID: '${process.env.TEMPLATE_ID||''}',\\n  PUBLIC_KEY: '${process.env.PUBLIC_KEY||''}',\\n};\\n\\nexport const SITE_CONFIG = {\\n  DEBUG: false\\n};\\n\`;fs.writeFileSync(path.join(dir,'config.js'),cfg);\"",
   "routes": [
     { "src": "/(.*)", "dest": "/public/$1" }
   ]
